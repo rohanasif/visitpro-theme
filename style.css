@@ -2,3 +2,14 @@
     padding: 0px;
     margin: 0px;
 }
+
+.nav>ul>li {
+    color: #6c757d;
+    transition-duration: 0.5s;
+}
+
+.nav>ul>li:hover {
+    color: #343a40;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
