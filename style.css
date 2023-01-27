@@ -13,3 +13,7 @@
     transition-duration: 0.5s;
     cursor: pointer;
 }
+
+.banner {
+    background-image: linear-gradient(rgba(25, 0, 255, 0.8), rgba(25, 0, 255, 0.6)), url(./images/banner-1.jpg);
+}
