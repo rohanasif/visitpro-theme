@@ -33,10 +33,53 @@
 }
 
 .div {
-    animation-name: div-slide;
+    /* animation-name: div-slide; */
     animation-duration: 3s;
     animation-iteration-count: infinite;
     position: relative;
+}
+
+.div:hover {
+    cursor: pointer;
+}
+
+.div::before {
+    content: "";
+    top: 0px;
+    left: 0%;
+    background-color: black;
+    visibility: hidden;
+    transition-duration: 0.8s;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.div::after {
+    background-color: black;
+    top: 0px;
+    left: 50%;
+    content: "";
+    visibility: hidden;
+    transition-duration: 0.8s;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.div:hover::before {
+    visibility: visible;
+    transition-duration: 0.8s;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+}
+
+.div:hover::after {
+    visibility: visible;
+    transition-duration: 0.8s;
+    width: 0%;
+    height: 100%;
 }
 
 @keyframes para-slide {
