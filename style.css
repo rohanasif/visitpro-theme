@@ -184,3 +184,68 @@
 .inner {
     transition-duration: 0.8s;
 }
+
+.polygon {
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 78% 38%, 0% 38%);
+    box-shadow: 0 0 40px rgb(0 0 0 / 15%);
+}
+
+.img-div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.circle2::before {
+    border-radius: 50%;
+    width: 0%;
+    height: 0%;
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition-duration: 0.5s;
+}
+
+.card2:hover .circle2::before {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+
+.wr1 {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.226), rgba(0, 0, 0, 0.349)), url(./coaching-1.jpg);
+    background-size: 100% 100%;
+}
+
+.wr2 {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.226), rgba(0, 0, 0, 0.349)), url(./coaching-2.jpg);
+    background-size: 100% 100%;
+}
+
+.wr3 {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.226), rgba(0, 0, 0, 0.349)), url(./coaching-3.jpg);
+    background-size: 100% 100%;
+}
+
+.wr4 {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.226), rgba(0, 0, 0, 0.349)), url(./coaching-4.jpg);
+    background-size: 100% 100%;
+}
+
+.as {
+    position: relative;
+    overflow: hidden;
+}
+
+.as1 {
+    position: absolute;
+    top: 270px;
+}
+
+.as:hover .as1 {
+    top: 150px;
+    transition-duration: 2s;
+}
