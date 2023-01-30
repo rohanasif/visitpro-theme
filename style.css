@@ -171,3 +171,16 @@
     height: 100%;
     transition-duration: 0.5s;
 }
+
+.overflow-image {
+    border-radius: 5px;
+}
+
+.overflow-image:hover .inner {
+    scale: 1.08;
+    transition-duration: 0.8s;
+}
+
+.inner {
+    transition-duration: 0.8s;
+}
